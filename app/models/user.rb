@@ -5,5 +5,4 @@ class User < ActiveRecord::Base
         @user = User.create!(attributes)
     end
     
-    validates_uniqueness_of :user_id
 end

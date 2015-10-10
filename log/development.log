@@ -8676,3 +8676,296 @@ Processing by MoviesController#index as HTML
   [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
   Rendered movies/index.html.haml within layouts/application (9.2ms)
 Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:03:05 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 215ms (Views: 202.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 75.167.212.115 at 2015-10-10 01:03:13 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 75.167.212.115 at 2015-10-10 01:03:21 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jj9y6NPvjvMQx7nuAJy9pLZi2Ce+gwKNiWOX+iWDi34LFUUrvuA0IVqzOws7iokIvPJMBrjMoxF6QMq8oSritQ==", "user"=>{"user_id"=>"qwer", "email"=>"qwer"}, "commit"=>"Login to my account"}
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "qwer"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "qwer"]]
+Redirected to https://selt-jmeade93.c9.io/movies
+Completed 302 Found in 29ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:03:21 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 75.167.212.115 at 2015-10-10 01:14:10 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 75.167.212.115 at 2015-10-10 01:14:14 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f004QRiChAijRp3Q1EriVI3Mh83VRrUlke3hZBObBbz6Zw+CdY0+2ukyHzXvXNb4h1wT7NMJFLlizrwilzJsdw==", "user"=>{"user_id"=>"qwer", "email"=>"qwer"}, "commit"=>"Login to my account"}
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "qwer"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "qwer"]]
+Redirected to https://selt-jmeade93.c9.io/movies
+Completed 302 Found in 21ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:14:14 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (61.7ms)
+Completed 200 OK in 114ms (Views: 109.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 75.167.212.115 at 2015-10-10 01:14:26 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:14:58 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 75ms (Views: 71.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 75.167.212.115 at 2015-10-10 01:14:59 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 75.167.212.115 at 2015-10-10 01:15:01 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTQqf1yyxvFjpjTEdjXNuawR27kldygI0yxigq6H3Hb4Hh28Mb18IynStiFNI/kVpoFPmCM4iZQgDz/EKi61vQ==", "user"=>{"user_id"=>"qwer", "email"=>"qwer"}, "commit"=>"Login to my account"}
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "qwer"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "qwer"]]
+Redirected to https://selt-jmeade93.c9.io/movies
+Completed 302 Found in 21ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:15:01 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 75.167.212.115 at 2015-10-10 01:16:06 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 75.167.212.115 at 2015-10-10 01:16:11 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CqFebarTI87kxNVTmQhiNUCNQL/pG0rn94OCuoBdnPqPi2mux9yZHK6wV7aiHlaZSh3Unu9U63sEoN/8BPT1MQ==", "user"=>{"user_id"=>"qwer", "email"=>"qwer"}, "commit"=>"Login to my account"}
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "qwer"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "qwer"]]
+Redirected to https://selt-jmeade93.c9.io/movies
+Completed 302 Found in 15ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:16:11 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 54ms (Views: 39.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 75.167.212.115 at 2015-10-10 01:21:34 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 75.167.212.115 at 2015-10-10 01:21:37 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g8yHzci92choUHX8EIYgskDz1mCCdFQTU8M5inDadk4G5rAOpbJjGiIk9xkrkBQeSmNCQYQ79Y+g4GTM9HMfhQ==", "user"=>{"user_id"=>"qwer", "email"=>"qwer"}, "commit"=>"Login to my account"}
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "qwer"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "qwer"]]
+Redirected to https://selt-jmeade93.c9.io/movies
+Completed 302 Found in 16ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:21:37 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 75.167.212.115 at 2015-10-10 01:22:46 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login_create" for 75.167.212.115 at 2015-10-10 01:22:55 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBOUpD4Ux/1vAbKJMRjXesL5nFyKKMgZP2uatKiYZjVNOaNnUxt9LyV1MGwKDuPWyGkIfYxnaYXMSMfyLDEP/g==", "user"=>{"user_id"=>"qwer", "email"=>"qwer"}, "commit"=>"Login to my account"}
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "qwer"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1  [["user_id", "qwer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT 1[0m  [["user_id", "qwer"]]
+Redirected to https://selt-jmeade93.c9.io/movies
+Completed 302 Found in 20ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:22:55 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "85K5mn9QfIXcwlSd7p4kdw=="]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 52ms (Views: 44.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies/new" for 75.167.212.115 at 2015-10-10 01:23:02 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1  [["session_token", "85K5mn9QfIXcwlSd7p4kdw=="]]
+  Rendered movies/new.html.haml within layouts/application (28.6ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/logout" for 75.167.212.115 at 2015-10-10 01:23:04 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.9ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:23:45 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "85K5mn9QfIXcwlSd7p4kdw=="]]
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/logout" for 75.167.212.115 at 2015-10-10 01:23:46 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.2ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:26:09 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "85K5mn9QfIXcwlSd7p4kdw=="]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 75.167.212.115 at 2015-10-10 01:26:11 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"90BDVdidU6B9i6Xj7qfUZ5KuH6u51n+E/vq5foJj84tyanSWtZLpcjf/JwbVseDLmD6Lir+Z3hgN2eQ4BsqaQA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = ? LIMIT 1[0m  [["session_token", "85K5mn9QfIXcwlSd7p4kdw=="]]
+Redirected to https://selt-jmeade93.c9.io/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 75.167.212.115 at 2015-10-10 01:26:11 +0000
+Cannot render console from 75.167.212.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.4ms)

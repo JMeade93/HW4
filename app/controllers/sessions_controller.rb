@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
             flash[:notice] = "Invalid user id/email combination"
             redirect_to login_path
         else
-            session[:session_token] = @user.session_token 
+            session[:session_token] = User.where(user_id: @user.user_id).take.session_token
             flash[:notice] = "You are logged in as #{@user.user_id}"
             redirect_to movies_path
         end

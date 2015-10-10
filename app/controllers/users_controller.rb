@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
    
    before_filter :set_current_user
-
    
    def user_params
      params.require(:user).permit(:user_id, :email, :session_token)
@@ -9,6 +8,10 @@ class UsersController < ApplicationController
    
    def new
 
+   end
+   
+   def set_current_user
+      @current_user ||=	session[:session_token]	&& User.find_by_session_token(session[:session_token])
    end
    
    def create
